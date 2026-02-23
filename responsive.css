@@ -1,46 +1,69 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  .top-wrapper h1 {
+  .top-wrapper h1 { /* If this h1 exists, keep its responsive style */
     font-size: 32px;
   }
 
-  .heading h2 {
+  .top-wrapper p {
+    font-size: 17px;
+  }
+
+  .heading h2 { /* If this h2 exists, keep its responsive style */
     font-size: 20px;
   }
+
 }
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .facebook {
-    margin-bottom: 10px;
-  }
-  
   .top-wrapper {
-    text-align: left;
+    text-align: center; /* Adjust to center for mobile if not already */
   }
   
-  .top-wrapper h1 {
+  .top-wrapper h1 { /* If this h1 exists, keep its responsive style */
     font-size: 24px;
   }
 
-  .top-wrapper p {
-    font-size: 14px;
+  .logo-left {
+    width: 150px; /* Adjust logo size for mobile */
+  }
+  
+  .logo-right {
+    width: 60px; /* Adjust logo size for mobile */
+  }
+
+  .team-logo {
+    width: 150px;
+    padding-top: 20px;
+  }
+
+  .top-wrapper .main-visual-list {
+    flex-direction: column-reverse;
+  }
+
+  .top-wrapper .main-visual-list li {
+    flex: 1 1 100%; /* Stack items on tablets */
+    min-width: unset;
+  }
+
+  .title {
+    width: auto;
+    max-width: 100%;
+    margin-top: -10%;
+    margin-bottom: 0px;
+  }
+
+  .class-name {
+    float: none;
+  }
+
+  .key-visual {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .flex-explanation li {
+    flex: 1 1 100%; /* Stack items on tablets */
+    min-width: unset;
   }
 }

@@ -11,10 +11,6 @@ a {
   text-decoration: none;
 }
 
-.clear {
-  clear: left;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -56,7 +52,7 @@ li {
 }
 
 .only {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .content .img {
@@ -64,7 +60,9 @@ li {
 }
 
 hr {
-  width: 80%;
+  width: 80%; /* Keeping original visual. */
+  border: none;
+  border-top: 2px solid #eee;
 }
 
 /* header */
@@ -77,6 +75,12 @@ header {
   z-index: 10;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo-left {
   width: 180px;
   margin-top: 20px;
@@ -87,67 +91,94 @@ header {
   margin-top: 10px;
 }
 
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-}
-
 /* top-wrapper */
 .top-wrapper {
   padding-top: 10px;
   padding-bottom: 20px;
   background-image: url(./images/background.jpg);
   background-size: cover;
-  text-align: left;
+  text-align: center; /* Center the content */
 }
 
 .team-logo {
-  margin-right: 30px;
+  width: 300px;
+  height: auto;
+  margin: 0 auto 30px auto; /* Centered with bottom margin */
 }
 
-ul {
+.top-wrapper .main-visual-list { /* Specific class for this ul */
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.team {
-  list-style: none;
-  padding-bottom: 30px;
-  margin: 0px;
+.top-wrapper .main-visual-list li {
+  margin: 10px;
+  flex: 1 1 45%; /* Allows items to grow and shrink, with a base of 45% width */
   text-align: center;
-}
-
-.team li {
-  flex: auto;
 }
 
 .class-name {
   color: #4D4D4D;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 23px;
+  float: left;
 }
 
 .title {
-  margin-top: 80px;
-  padding-right: 30px;
+  max-width: 110%;
+  height: auto;
+  margin-top: 30%;
+  margin-bottom: 20%;
 }
 
 .key-visual {
+  max-width: 80%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 10px 10px rgba(119, 229, 211, 0.3), -10px -10px rgba(243, 177, 105, 0.3);
+}
+
+.flex-explanation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.flex-explanation li {
+  flex: 1 1 45%; /* Allows items to grow and shrink, with a base of 45% width */
+  min-width: 300px; /* Minimum width for smaller screens */
+  margin: 10px;
 }
 
 /* concept-wrapper */
 
 /* feature-wrapper */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
 .item .fa-solid {
   color:#b37e2d;
 }
 
+.content .img, .color, .qween { /* img and color classes for consistent styling */
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
 .color {
   border-radius: 0;
+}
+
+.qween {
+  max-width: 60%;
+  margin-left: 20%;
 }
 
 .flex-column {
@@ -157,6 +188,13 @@ ul {
 /* evaluation-wrapper */
 .evaluation {
   font-size: 20px;
+  display: flex; /* Make evaluation itself a flex container */
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.evaluation-section {
+  margin-top: 50px; /* Add margin to separate evaluation items */
 }
 
 .evaluation .fa-check {
@@ -165,10 +203,6 @@ ul {
 
 .evaluation .fa-triangle-exclamation {
   color:#bd4f00;
-}
-
-.blank {
-  height: 50px;
 }
 
 footer {
