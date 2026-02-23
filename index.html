@@ -1,90 +1,323 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <title>触ってわかる!!おりがみチェス｜エレクトロニックゲーミングリンゴ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header-left">
+          <img class="logo-left" src="./images/title.png" alt="触ってわかる!!おりがみチェス">
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        <div class="header-right">
+          <img class="logo-right" src="./images/team_icon.png" alt="エレクトロニックゲーミングリンゴ">
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <div class="team">
+          <img class="team-logo" src="./images/team.png" height="80" alt="エレクトロニックゲーミングリンゴ">
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
+        <ul>
+          <li>
+            <p class="class-name">2025年度 画像・映像コンテンツ演習3</p>
+            <img class="title" src="./images/title.png" height="200" alt="触ってわかる!!おりがみチェス">
+          </li>
+          <li>
+            <img class="key-visual" src="./images/piece_0.png" height="500" alt="触ってわかる!!おりがみチェス｜キービジュアル">
+          </li>
+        </ul>
       </div>
       <div class="clear"></div>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    <div class="concept-wrapper">
+      <div class="container content">
+        <div class="heading">
+          <h1>「触ってわかる!!おりがみチェス」とは？</h1>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <p class="explanation">
+                視覚障がい者も健常者も「みんなで対等に楽しめる」がコンセプトの、触って理解できるブラインドチェスキットです。
+              </p>
+              <p class="explanation">
+                私たち、情報工学科4人の大学生チーム「エレクトロニックゲーミングリンゴ」は、従来の視覚障がい者向けチェスが高価で認知負荷が高いという課題を解決することを目標に、開発を始めました。
+              </p>
+              <p class="explanation">
+                安価な紙素材を使用し，触覚的なフィードバックとユニバーサルデザインを取り入れることで，誰もが等しくチェスを楽しめることを目指したプロダクトです．
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/play.jpg" height="300" alt="「触ってわかる!!おりがみチェス」を実際に遊んでいる所">
+            </li>
+          </ul>
+        </div>
       </div>
-      <span class="btn message">さっそく開発する</span>
+      <hr width="800">
     </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    <div class="feature-wrapper">
+      <div class="container content">
+        <div class="heading">
+          <h1>特筆すべき特徴</h1>
+        </div>
+        <div>
+          <p class="explanation only">
+            「触ってわかる!!おりがみチェス」では、誰もが対等に楽しめることを目指し、様々な工夫を施しています。
+          </p>
+        </div>
+        <div class="item">
+          <a>
+            <i class="fa-solid fa-dollar-sign"></i>
+            素材と低価格化
+          </a>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                ペーパークラフト製
+              </h3>
+              <p class="explanation">
+                既存の視覚障害者向けのチェスでは木材を使用していたり、ターゲットとなる消費者の人口が少なく大量生産が困難なため<sup id="cite1"><a href="#ref1">[1]</a></sup>、基本的には高価なものが多いです。
+              </p>
+              <p class="explanation">
+                そこで、本プロダクトは素材に紙を採用することで、材料費を抑えています（試作品においては、おおよそ600円程度で作成可能）。
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/chess_1.png" height="300" alt="本プロダクトとそのパーツである紙が散らばった写真">
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <a>
+            <i class="fa-solid fa-chess"></i>
+            駒の機能性
+          </a>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                独自の形状と突起
+              </h3>
+              <p class="explanation">
+                それぞれの駒は、独自に設計した形状を持ちます。
+              </p>
+              <p class="explanation">
+                この駒の形状は実際に駒が動く方向からインスパイアされたものになっています（例えば、斜めに動けるビショップは、上から見たときに前面が斜めになっています）。
+              </p>
+              <p class="explanation">
+                また、駒の上面には立体プリンタを用いて印刷された突起を貼り付けています。
+              </p>
+              <p class="explanation">
+                この突起は、駒の移動方向を表す形状になっています。
+              </p>
+              <p class="explanation">
+                このような特徴から、各駒を触覚によって認識・区別することが可能になります。
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/pieces.jpg" height="200" alt="本プロダクトの各駒を並べた写真">
+            </li>
+          </ul>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                自機・敵機の区別
+              </h3>
+              <p class="explanation">
+                駒の上面には傾斜を施しており、手前側よりも奥側が高くなっています。
+              </p>
+              <p class="explanation">
+                その傾斜によって、駒が自分のものか相手のものかを判別することが可能になります。
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/piece_side_2.jpg" height="250" alt="ポーン、ルークを横から見た写真">
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <a>
+            <i class="fa-solid fa-chess-board"></i>
+            盤面の機能性
+          </a>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                凸型の仕切り
+              </h3>
+              <p class="explanation">
+                盤面において、マスとマスの間には、凸型の仕切りを設けています。
+              </p>
+              <p class="explanation">
+                これによって、駒を移動させる際にしっかりマス目に固定することができ、ずれにくくなります。
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/board_0.jpg" height="300" alt="盤面の写真">
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <a>
+            <i class="fa-solid fa-palette"></i>
+            ユニバーサルデザイン
+          </a>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                配色の配慮
+              </h3>
+              <p class="explanation">
+                弱視の方や色覚において特性（1・2・3型色覚）を持っている方でも駒の敵味方が判別できるよう、黄色と紫色を採用しました。
+              </p>
+              <p class="explanation">
+                左図はそれぞれ、
+              </p>
+              <ul class="flex-column">
+                <li>左上：色覚特性なし</li>
+                <li>右上：1型色覚</li>
+                <li>左下：2型色覚</li>
+                <li>右下：3型色覚</li>
+              </ul>
+              <p class="explanation">
+                での、本プロダクトに対する見え方を表しています。
+              </p>
+            </li>
+            <li>
+              <img class="color" src="./images/color_1.jpg" height="300" alt="各駒の色に対する、各色覚特性での見え方">
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <a>
+            <i class="fa-solid fa-hand"></i>
+            組み立て構造
+          </a>
+        </div>
+        <div>
+          <ul class="flex-explanation">
+            <li>
+              <h3>
+                「ツメ」構造
+              </h3>
+              <p class="explanation">
+                ペーパークラフトには「ツメ」の構造を採用しており、のりやテープといった道具を使わずに組み立てることが可能です。
+              </p>
+              <p class="explanation">
+                ツメの差込口には半円形型の切り込みを入れ、ガイドとすることで、組み立てを容易にしています。
+              </p>
+              <p class="explanation">
+                また、ツメには若干の返しを付けているため、差し込む際に「カチッ」とはまり、プレイする際にも抜けづらくなっています．
+              </p>
+            </li>
+            <li>
+              <img class="color" src="./images/exploded_view.png" height="250" alt="キングの駒の展開図">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr width="800">
     </div>
-  </footer>
-</body>
+    <div class="evaluation-wrapper">
+      <div class="container content">
+        <div class="heading">
+          <h1>到達度評価</h1>
+        </div>
+        <div>
+          <p class="explanation only">
+            本プロダクトを評価するにあたって、チームメンバー（晴眼者）同士、目隠しをした状態でテストプレイを行いました。
+          </p>
+        </div>
+        <div>
+          <div class="blank">
+          </div>
+          <ul class="flex-explanation">
+            <li>
+              <div class="evaluation">
+                <a>
+                  <i class="fa-solid fa-check"></i>
+                  良かった点
+                </a>
+              </div>
+              <p class="explanation">
+                駒の形状および突起により、遊んでいる最中でも駒同士を容易に識別が可能でした。
+              </p>
+              <p class="explanation">
+                加えて、盤の凸型の仕切り構造により、駒がずれにくく、移動の完了も明確にわかります。
+              </p>
+              <p class="explanation">
+                推察として、倒れてしまった駒を戻したり、駒の移動を伝えたり等、ある程度のサポートがあれば、視覚障がいのある方でもプレイは可能であると考えます。
+              </p>
+              <p class="explanation">
+                なお、本プロダクト制作に至った授業である「画像・映像コンテンツ演習3」では、最終回時の成果物プレゼンにて、本プロダクトは最優秀賞を受賞いたしました。<sup id="cite2"><a href="#ref2">[2]</a></sup>
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/chess_3.png" height="500" alt="本プロダクトをチェスの初期配置に並べ、上から見た写真">
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="blank">
+          </div>
+          <ul class="flex-explanation">
+            <li>
+              <div class="evaluation">
+                <a>
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  改善点
+                </a>
+              </div>
+              <p class="explanation">
+                ・山折りではなく、谷折りの構造を採用しているクイーンの駒に関してはプレイ中に分解しやすいため、形状の再検討が必要であると考えられます。
+              </p>
+              <p class="explanation">
+                ・素材が紙で軽量であるため、プレイ中に服の袖が当たって倒れてしまったり、掌の水分や油分で駒が持ち上がってしまうことがあります。そのため、素材の再検討等を行う必要があると考えられます。
+              </p>
+            </li>
+            <li>
+              <img class="img" src="./images/qween.jpg" height="300" alt="本プロダクトをチェスの初期配置に並べ、上から見た写真">
+            </li>
+          </ul>
+          <div class="blank">
+          </div>
+        </div>
+        <div>
+          <p class="explanation only">
+            今後は、これらの課題に取り組みながら、実際に視覚障がいを持つ方々に遊んでいただくなどすることで、より多くの人々が楽しめるプロダクトへと進化させていく所存です。
+          </p>
+          <p class="explanation only">
+            ここまでご覧いただき、ありがとうございました。
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="reference">
+          <ul class="flex-column">
+            <li id="ref1"><a href="https://www.47news.jp/10266718.html">参考[1] 47NEWS 「健常者とも互角に対戦」目が不自由でも楽しめるチェスや囲碁　アジアパラ大会の競技に…でも日本では選択肢乏しく盲学校ではオセロばかり
+  2026年2月23日</a><a href="#cite1">↩</a></li>
+            <li id="ref2"><a href="https://www.chuo-u.ac.jp/academics/faculties/science/departments/infotech/news/2026/01/83597/">出典[2] 中央大学 画像・映像コンテンツ演習 成果発表会にてチーム「エレクトロニックゲーミングリンゴ」「もちもち」「仁荷中央」最優秀賞
+  2026年2月23日</a><a href="#cite2">↩</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
