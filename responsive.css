@@ -14,9 +14,26 @@
 
 }
 
+/* 説明と画像を折り返させる */
+@media all and (max-width: 790px) {
+  .flex-explanation {
+    flex-direction: column-reverse;
+    display: block;
+  }
+
+  .content .img, .color, .qween { /* img and color classes for consistent styling */
+    max-width: 90%;
+  }
+}
+
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
+  .container {
+    padding: 0 0;
+  }
+
   .top-wrapper {
+    padding: 0 55px;
     text-align: center; /* Adjust to center for mobile if not already */
   }
   

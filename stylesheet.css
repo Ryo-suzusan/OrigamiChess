@@ -150,7 +150,6 @@ header {
 
 .flex-explanation li {
   flex: 1 1 45%; /* Allows items to grow and shrink, with a base of 45% width */
-  min-width: 300px; /* Minimum width for smaller screens */
   margin: 10px;
 }
 
