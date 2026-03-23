@@ -24,6 +24,11 @@
   .content .img, .color, .qween { /* img and color classes for consistent styling */
     max-width: 90%;
   }
+  
+  .qween {
+    max-width: 70%;
+	  margin-left: 10%;
+  }
 }
 
 /* スマホ向けレイアウト */
